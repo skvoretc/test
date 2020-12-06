@@ -1,0 +1,215 @@
+import "./App.css";
+import Object from "./Object.js";
+const test =[
+  {
+      start:3,
+      end:4,
+      notebutton:3
+  },
+  {
+    start:3,
+    end:4,
+    notebutton:3
+},
+{
+  start:3,
+  end:4,
+  notebutton:3
+},
+  {
+    start:2,
+    end:3,
+    notebutton:53
+},
+{
+  start:3,
+  end:4,
+  notebutton:22
+},
+{
+start:2,
+end:3,
+notebutton:27
+},
+{
+  start:3,
+  end:4,
+  notebutton:3
+},
+{
+start:2,
+end:3,
+notebutton:5
+},
+{
+  start:3,
+  end:4,
+  notebutton:31
+},
+{
+start:2,
+end:3,
+notebutton:80
+},
+{
+  start:3,
+  end:4,
+  notebutton:41
+},
+{
+start:2,
+end:3,
+notebutton:87
+},
+{
+  start:3,
+  end:4,
+  notebutton:53
+},
+{
+start:2,
+end:3,
+notebutton:51
+},
+{
+  start:3,
+  end:4,
+  notebutton:3
+},
+{
+start:2,
+end:3,
+notebutton:5
+},
+{
+  start:3,
+  end:4,
+  notebutton:3
+},
+{
+start:2,
+end:3,
+notebutton:62
+},
+{
+  start:3,
+  end:4,
+  notebutton:65
+},
+{
+start:2,
+end:3,
+notebutton:5
+},
+{
+  start:3,
+  end:4,
+  notebutton:3
+},
+{
+start:3,
+end:4,
+notebutton:3
+},
+{
+start:3,
+end:4,
+notebutton:3
+},
+{
+start:2,
+end:3,
+notebutton:53
+},
+{
+start:3,
+end:4,
+notebutton:22
+},
+{
+start:2,
+end:3,
+notebutton:27
+},
+{
+start:3,
+end:4,
+notebutton:3
+},
+{
+start:2,
+end:3,
+notebutton:5
+},
+{
+start:3,
+end:4,
+notebutton:31
+},
+{
+start:2,
+end:3,
+notebutton:80
+},
+{
+start:3,
+end:4,
+notebutton:41
+},
+{
+start:2,
+end:3,
+notebutton:87
+},
+{
+start:3,
+end:4,
+notebutton:53
+},
+{
+start:2,
+end:3,
+notebutton:51
+},
+{
+start:3,
+end:4,
+notebutton:3
+},
+{
+start:2,
+end:3,
+notebutton:5
+},
+{
+start:3,
+end:4,
+notebutton:3
+},
+{
+start:2,
+end:3,
+notebutton:62
+},
+{
+start:3,
+end:4,
+notebutton:65
+},
+{
+start:2,
+end:3,
+notebutton:5
+},
+
+]
+function App() {
+
+  return (
+    <div className="App">
+      <Object music={test} width={600} height = {300}/>
+    </div>
+  );
+}
+
+export default App;
