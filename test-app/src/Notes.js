@@ -9,8 +9,19 @@ class object extends Component {
       //Переборка массива с нотами
       this.props.record.map((note, index) => {
         //Отображение нот басового ключа
-        if (note.notecode <= 22) {
+        if (note.pianoButton <= 38) {
           bas_width += Number(this.props.indent) + 20;
+          console.log();
+          if(note.half_tone){
+            return (
+              <div
+                key={index}
+                className={"note blacknote"}
+                style={{ top: note.indent + "px", left: bas_width + "px" }}
+              ></div>
+            );
+          }
+          else{
           return (
             <div
               key={index}
@@ -18,10 +29,21 @@ class object extends Component {
               style={{ top: note.indent + "px", left: bas_width + "px" }}
             ></div>
           );
+          }
         }
         //Отображение нот скрипичного ключа
         else {
           scrip_width += Number(this.props.indent) + 20;
+          if(note.half_tone){
+            return (
+              <div
+                key={index}
+                className={"note blacknote"}
+                style={{ top: note.indent + "px", left: scrip_width + "px" }}
+              ></div>
+            );
+          }
+          else{
           return (
             <div
               key={index}
@@ -29,6 +51,7 @@ class object extends Component {
               style={{ top: note.indent + "px", left: scrip_width + "px" }}
             ></div>
           );
+          }
         }
       })
     );
